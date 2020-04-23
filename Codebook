@@ -17,7 +17,7 @@ included 30 subjects; each subject has a unique ID.
 6 - Laying
   
 ##Recorded Measurements:   
-Measurements 303:344, 382:423, 461:502 were excluded from the final dataset.
+Measurements 303:344, 382:423, 461:502 were excluded from the intermediate dataset.
 
 1 tBodyAcc-mean()-X
 2 tBodyAcc-mean()-Y
@@ -583,4 +583,5 @@ Measurements 303:344, 382:423, 461:502 were excluded from the final dataset.
 
 ##Data Manipulation:
 Only measurements related to mean ("mean") or standard deviation ("std") were extracted for
-use in the final data set ("Wearable_Data.txt").  The average was calculated for these measurements, broken up by both SubjectID and Activity.
+use in the final data set.  The average was calculated for these measurements, broken up by both SubjectID and Activity, 
+and saved in the final data set ("Wearable_Data.txt").
