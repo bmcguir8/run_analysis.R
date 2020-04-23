@@ -3,10 +3,9 @@ Getting and Cleaning Data Course Assignment
 ---
 Run_analysis.R script takes "features.txt", "train/X_train.txt", "train/y_train.txt", "train/subject_train.txt", "test/X_test.txt", "test/y_test.txt", "test/subject_test.txt" and information from "activity_labels.txt" to generate a tidy data set.  From there, only the mean ("mean") and standard deviation ("std") measurements are extracted.  The mean is calculated for all extracted measurements, and is broken up by Subject as well as Activity.
 
-==================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
-==================================================================
+
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
 DITEN - Universit‡ degli Studi di Genova.
