@@ -1,3 +1,7 @@
+##dplyr packaged needed for this function.
+##creates directory within whatever WD user is in, downloads data to new directory, output goes
+##to that directory as well.
+
 run_analysis <- function() {
   if(!dir.exists("run_analysis")) {
     dir.create("run_analysis")
