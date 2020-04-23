@@ -1,8 +1,8 @@
 ##dplyr packaged needed for this function.
-##creates directory within whatever WD user is in, downloads data to new directory, output goes
-##to that directory as well.
+
 
 run_analysis <- function() {
+  wd <- getwd()
   if(!dir.exists("run_analysis")) {
     dir.create("run_analysis")
   }
@@ -49,6 +49,7 @@ run_analysis <- function() {
   grouped <- group_by(extracted, SubjectID, Activity)
   summarized <- summarize_at(grouped, vars(matches("mean|std")),mean)
   write.table(summarized, file = "Wearable_Data.txt", row.names = F)
+  setwd(wd)
 }
 
 
