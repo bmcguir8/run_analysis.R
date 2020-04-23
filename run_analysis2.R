@@ -48,7 +48,7 @@ run_analysis <- function() {
       ##extracts columns with either mean or std calculations
   grouped <- group_by(extracted, SubjectID, Activity)
   summarized <- summarize_at(grouped, vars(matches("mean|std")),mean)
-  write.table(summarized, file = "Wearable_Data.txt")
+  write.table(summarized, file = "Wearable_Data.txt", row.names = F)
 }
 
 
